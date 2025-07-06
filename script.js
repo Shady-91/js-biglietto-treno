@@ -10,9 +10,6 @@ let age = prompt("quanti anni hai?");
 let price = km * priceKm;
 // prezzo totale del biglietto
 
-let finalPrice = price;
-output.finalPrice = finalPrice.toFixed(2);
-// prezzo finale del biglietto, arrotondato a due decimali
 
 const discountUnder18 = priceKm * 0.2 * 100;
 //discount for under 18
@@ -26,13 +23,19 @@ if (age > 65) {
       finalPrice = price - discountOver65;
 }
 
-let message = prompt(" il prezzo del biglietto è " + finalPrice + " euro. Vuoi procedere con l'acquisto? (si/no)");
+let message = prompt(" il prezzo del biglietto è " + finalPrice.toFixed(2) + " euro. Vuoi procedere con l'acquisto? (si/no)");
 if (message === "si") {
       alert(" grazie per aver acquistato il biglietto!");
 }
 // messaggio di prompt per l'acquisto del biglietto
 else if (message === "no") {
-      alert("ok,grazie è arrivederci!");
+      alert("ok, grazie mille è arrivederci!");
+      // messaggio di prompt per l'annullamento dell'acquisto del biglietto
 }
+
+
+finalPrice = $("priceKM") $("km") $("age") $("discountUnder18") $("discountOver65");
+finalPrice = finalPrice.toFixed(2);
+// prezzo finale del biglietto, arrotondato a due decimali
 
 // messaggio di prompt per l'annullamento dell'acquisto del biglietto
