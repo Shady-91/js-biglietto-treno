@@ -28,14 +28,18 @@ if (message === "si") {
       alert(" grazie per aver acquistato il biglietto!");
 }
 // messaggio di prompt per l'acquisto del biglietto
+
+
 else if (message === "no") {
       alert("ok, grazie mille è arrivederci!");
       // messaggio di prompt per l'annullamento dell'acquisto del biglietto
 }
 
 
-finalPrice = $("priceKM") $("km") $("age") $("discountUnder18") $("discountOver65");
 finalPrice = finalPrice.toFixed(2);
+
+console.log("Il prezzo del biglietto è: " + finalPrice + " euro");
+
 // prezzo finale del biglietto, arrotondato a due decimali
 
 // messaggio di prompt per l'annullamento dell'acquisto del biglietto
