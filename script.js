@@ -19,9 +19,8 @@ if (age < 18) {
       // aggiorno direttamente price!
       price = price - discountOver65;
 }
-//  poi stampi price
 
-let message = prompt(" il prezzo del biglietto è " + finalPrice.toFixed(2) + " euro. Vuoi procedere con l'acquisto? (si/no)");
+let message = prompt(" il prezzo del biglietto è " + price.toFixed(2) + " euro. Vuoi procedere con l'acquisto? (si/no)");
 if (message === "si") {
       alert(" grazie per aver acquistato il biglietto!");
 }
@@ -32,11 +31,9 @@ else if (message === "no") {
       alert("ok, grazie mille è arrivederci!");
       // messaggio di prompt per l'annullamento dell'acquisto del biglietto
 }
+price = price.toFixed(2);
+console.log("Il prezzo del biglietto è: " + price + " euro");
 
-
-finalPrice = finalPrice.toFixed(2);
-
-console.log("Il prezzo del biglietto è: " + finalPrice + " euro");
 
 // prezzo finale del biglietto, arrotondato a due decimali
 
