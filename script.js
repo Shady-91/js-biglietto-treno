@@ -10,18 +10,16 @@ let age = prompt("quanti anni hai?");
 let price = km * priceKm;
 // prezzo totale del biglietto
 
-
-const discountUnder18 = price * 0.2;
-//discount for under 18
 if (age < 18) {
-      finalPrice = price - discountUnder18;
+      const discountUnder18 = price * 0.2;
+      // aggiorno direttamente price!
+      price = price - discountUnder18
+} else if (age > 65) {
+      const discountOver65 = price * 0.4;
+      // aggiorno direttamente price!
+      price = price - discountOver65;
 }
-
-const discountOver65 = price * 0.4;
-//discount for over 65
-if (age > 65) {
-      finalPrice = price - discountOver65;
-}
+//  poi stampi price
 
 let message = prompt(" il prezzo del biglietto è " + finalPrice.toFixed(2) + " euro. Vuoi procedere con l'acquisto? (si/no)");
 if (message === "si") {
