@@ -11,13 +11,13 @@ let price = km * priceKm;
 // prezzo totale del biglietto
 
 
-const discountUnder18 = priceKm * 0.2 * 100;
+const discountUnder18 = price * 0.2;
 //discount for under 18
 if (age < 18) {
       finalPrice = price - discountUnder18;
 }
 
-const discountOver65 = priceKm * 0.4 * 100;
+const discountOver65 = price * 0.4;
 //discount for over 65
 if (age > 65) {
       finalPrice = price - discountOver65;
